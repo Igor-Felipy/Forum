@@ -1,8 +1,7 @@
 from flask import Flask, render_template
 
 
-app =  Flask(__name__)
-
+app =  Flask(__name__,static_folder='static')
 
 #just the main page
 @app.route('/', methods=['GET'])
